@@ -16,6 +16,7 @@ const userSchema = new Schema(
         email: {
             type: String,
             required: true,
+            unique: true,
             trim: true,
             index: true
         },
@@ -86,5 +87,5 @@ userSchema.methods.generateRefreshToken = function(){
     )
 }
 
-export const User = mongoose.model("User", userSchema);
+export default User = mongoose.model("User", userSchema);
 
