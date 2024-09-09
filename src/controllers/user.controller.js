@@ -48,8 +48,13 @@ const registerUser = asyncHandler( async (req, res) => {
     }
 
     User.create({
-        fullName:
-        avatar: 
+        fullName,
+        avatar: avatar.url,
+        coverImage: coverImage?.url || "",
+        email,
+        password,
+        username: username.toLowerCase()
+        
     })
 
 
