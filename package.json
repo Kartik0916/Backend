@@ -12,6 +12,7 @@
   ],
   "author": "kartik gupta",
   "license": "ISC",
+  
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cloudinary": "^2.4.0",
